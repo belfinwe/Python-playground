@@ -8,4 +8,4 @@ Files such as `three_eight.py` are for testing what is new in, this case, `Pytho
 
 ## Testing
 
-Figures I could add testing as well. Will focus on `pytesst`.
+Figures I could add testing as well. Will focus on `pytest`.
