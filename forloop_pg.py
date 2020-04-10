@@ -1,4 +1,7 @@
 def double_custom(in_data: int) -> int:
+    """
+    Return double the input. Takes int as input.
+    """
     return in_data * 2
 
 

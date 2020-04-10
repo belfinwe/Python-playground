@@ -1,4 +1,7 @@
 def square(number: int):
+    """
+    Multiplies the number (int) with itself.
+    """
     if type(number) == int or type(number) == float:
         return number*number
     else:
@@ -6,6 +9,9 @@ def square(number: int):
 
 
 def map_square(numbers_as_list: list):
+    """
+    Takes a list with ints, and returns a lst with the double ints.
+    """
     square_numbers = map(square, numbers_as_list)
     return list(square_numbers)
 
