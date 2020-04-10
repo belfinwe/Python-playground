@@ -7,7 +7,11 @@ import map_pg
 
 
 def test_even():
+<<<<<<< HEAD
     assert not filter_pg.even(5), f"Failed. Results should be False"
+=======
+    assert not filter_pg.even(5), f"Failed. Should be False"
+>>>>>>> 499719c5add5648ff59f2746ba73d1cf6e33a70d
     assert filter_pg.even(6), f"Failed. Resultatet burde være True"
 
 
@@ -21,10 +25,14 @@ def test_square():
     assert map_pg.square(sq) == 9, f"Failed, map_pg(3) should be 9, but is {map_pg.square(sq)}"
     liste_str_testing = ["144", "128"]
     assert map_pg.square(liste_str_testing) == "Only takes int or float.", \
-        f"Skal ikkje kunne ta imot str (på sikt berre ikkje bokstaver?)"
+        f"Should not be able to accept strings."
 
 
 def test_map_square():
     liste_testing = [144, 128]
     assert map_pg.map_square(liste_testing) == [20736, 16384], \
+<<<<<<< HEAD
         f"Failed, result was {map_pg.map_square(liste_testing)}, should have been [20736, 16384]"
+=======
+        f"Failed, results: {map_pg.map_square(liste_testing)}, should be [20736, 16384]"
+>>>>>>> 499719c5add5648ff59f2746ba73d1cf6e33a70d
