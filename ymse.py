@@ -1,5 +1,5 @@
 class Ymse():
-    Y = "Den einaste klassevariabelen! (Enda.)"
+    Y = "The only class variable (yet)")
 
     def __init__(self, y : str):
         self.y = y
@@ -14,6 +14,7 @@ class Ymse():
         return self.Y
 
 
-x = Ymse("ost")
-print(x.get_y())
-print(x.get_Y())
+if __name__ == "__main__":
+    x = Ymse("cheese")
+    print(x.get_y())
+    print(x.get_Y())
