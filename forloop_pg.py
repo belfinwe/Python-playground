@@ -7,9 +7,9 @@ def double_custom(in_data: int) -> int:
 
 def alter_list(inn: list):
     """
-    Returns a new list with onyl half the items
+    Returns a new list with only half the items
     """
-    res = [inn[i] for i in range(len(inn)) if i%2 == 0]
+    res = [inn[i] for i in range(len(inn)) if i % 2 == 0]
     return res
 
 
