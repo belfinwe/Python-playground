@@ -7,11 +7,8 @@ import map_pg
 
 
 def test_even():
-<<<<<<< HEAD
     assert not filter_pg.even(5), f"Failed. Results should be False"
-=======
     assert not filter_pg.even(5), f"Failed. Should be False"
->>>>>>> 499719c5add5648ff59f2746ba73d1cf6e33a70d
     assert filter_pg.even(6), f"Failed. Resultatet burde være True"
 
 
@@ -31,8 +28,5 @@ def test_square():
 def test_map_square():
     liste_testing = [144, 128]
     assert map_pg.map_square(liste_testing) == [20736, 16384], \
-<<<<<<< HEAD
-        f"Failed, result was {map_pg.map_square(liste_testing)}, should have been [20736, 16384]"
-=======
+        f"Failed, result was {map_pg.map_square(liste_testing)}, should have been [20736, 16384]"\
         f"Failed, results: {map_pg.map_square(liste_testing)}, should be [20736, 16384]"
->>>>>>> 499719c5add5648ff59f2746ba73d1cf6e33a70d

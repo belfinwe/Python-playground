@@ -1,5 +1,5 @@
 import pytest
-import three_eight
+from python_version_38 import three_eight
 
 
 def test_walrus():

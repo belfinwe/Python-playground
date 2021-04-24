@@ -1,10 +1,10 @@
-class Ymse():
-    Y = "The only class variable (yet)")
+class Ymse:
+    Y = "The only class variable (yet)"
 
-    def __init__(self, y : str):
+    def __init__(self, y: str):
         self.y = y
 
-    def set_y(self, y : str):
+    def set_y(self, y: str):
         self.y = y
 
     def get_y(self) -> str:

@@ -1,4 +1,4 @@
-# From ReadlPython: https://realpython.com/linked-lists-python/
+# From RealPython: https://realpython.com/linked-lists-python/
 
 class Node:
     def __init__(self, data):

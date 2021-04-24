@@ -15,7 +15,7 @@ def alter_list(inn: list):
 
 if __name__ == "__main__":
     list_i = [10, 20, 30, 40, 50]
-    print(list(double_custom(i) for i in list_i))
+    print(f"double_custom liste og for-loop: {list(double_custom(i) for i in list_i)}")
     # print(double(i) for i in list_i)  # Returns a generator object?
-    print(list(map(double_custom, list_i)))
-    print(alter_list(list_i))
+    print(f"double_custom med map: {list(map(double_custom, list_i))}")
+    print(f"alter_list: {alter_list(list_i)}")

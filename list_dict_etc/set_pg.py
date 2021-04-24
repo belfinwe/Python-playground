@@ -13,7 +13,7 @@ def random_item(list_in: list) -> str:
     """
     Provides a pseudo random item for the given list
     """
-    j = random.randint(0, 5)
+    j = random.randint(0, len(list_in) - 1)
     return list_in[j]
 
 
@@ -29,14 +29,11 @@ def create_random_list(list_in: list) -> list:
 
 if __name__ == "__main__":
     set_liste = ["Cheese", "Biscuit", "Sausage", "Wine", "Cheese", "Bread"]
+    print(f"listen som testes på: {set_liste}\nLengde: {len(set_liste)}")
 
     set_liste_res = testing_set(set_liste)
-    print(set_liste_res)
+    print(f"testing_set: {set_liste_res}\nLengde: {len(set_liste_res)}")
 
-    print("Set:")
-    print(create_random_set(set_liste))
+    print(f"Set: {create_random_set(set_liste)}")
 
-    print("List:")
-    print(create_random_list(set_liste))
-
-
+    print(f"List: {create_random_list(set_liste)}")
