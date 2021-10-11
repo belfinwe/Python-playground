@@ -1,2 +1,2 @@
-# Not entierly sure why this file is need, other then path
+# Not entierly sure why this file is need, other than path
 import pytest

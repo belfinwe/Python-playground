@@ -1,4 +1,4 @@
-def is_number(indata: str) -> tuple:
+def is_number(in_data: str) -> tuple:
     """
     Takes a string, returns a tuple. Checks if input is an int or float.
 
@@ -8,16 +8,45 @@ def is_number(indata: str) -> tuple:
     (None, "Not a number", False)
     """
     try:
-        i = int(indata)
+        i = int(in_data)
         return i, "int", True
-    except:
+    except ValueError:
         try:
-            i = float(indata)
+            i = float(in_data)
             return i, "float", True
-        except:
+        except ValueError:
+            return None, "Not a number", False
+
+
+def is_number_mk2(num: str) -> tuple:
+    """
+    Takes a string, returns a tuple. Checks if input is an int or float.
+
+    The difference from `is_number()`: this function uses `isinstance()` to check if int or float.
+    Returns one of the following tuples:
+    (the_number, "int", True)
+    (the_number, "float", True)
+    (None, "Not a number", False)
+    """
+    try:
+        if isinstance(int(num), int):
+            return int(num), "int", True
+    except ValueError:
+        try:
+            if isinstance(float(num), float):
+                return float(num), "float", True
+        except ValueError:
             return None, "Not a number", False
 
 
 if __name__ == "__main__":
-    input_data = input("Write something: ")
-    print(is_number(input_data))
+    # input_data = input("Write something: ")
+    print("first")
+    print(is_number("1"))
+    print(is_number("1.0"))
+    print(is_number("one"))
+
+    print("mk2")
+    print(is_number_mk2("1"))
+    print(is_number_mk2("1.0"))
+    print(is_number_mk2("one"))
