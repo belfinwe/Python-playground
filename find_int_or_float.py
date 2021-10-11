@@ -40,13 +40,12 @@ def is_number_mk2(num: str) -> tuple:
 
 
 if __name__ == "__main__":
-    # input_data = input("Write something: ")
     print("first")
     print(is_number("1"))
     print(is_number("1.0"))
     print(is_number("one"))
 
-    print("mk2")
+    print("\nmk2")
     print(is_number_mk2("1"))
     print(is_number_mk2("1.0"))
     print(is_number_mk2("one"))
