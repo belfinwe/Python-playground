@@ -1,6 +1,5 @@
-import filter_pg
-import zip_pg
-import map_pg
+from built_in_functions import filter_pg, map_pg, zip_pg
+
 
 # Er litt usikker på om det er slik her det kan gjerast.
 # Eller som ein skal gjere som eg har gjort i test_three_eight.py
