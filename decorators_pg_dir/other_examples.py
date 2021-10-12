@@ -14,8 +14,9 @@ def add_together(a, b):
     return a + b
 
 
-print(f"{add_together.__name__}(): {add_together.__doc__}")
+if __name__ == "__main__":
+    print(f"{add_together.__name__}(): {add_together.__doc__}")
 
-# 1. Calls the function add_together
-print(add_together([(1,3),(4,9),(5,9)]))
-print(add_together([(9,2)]))
+    # 1. Calls the function add_together
+    print(add_together([(1,3),(4,9),(5,9)]))
+    print(add_together([(9,2)]))
