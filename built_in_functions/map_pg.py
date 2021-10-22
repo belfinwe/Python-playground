@@ -11,7 +11,7 @@ def square(number: int):
 
 def map_square(numbers_as_list: list) -> list:
     """
-    Takes a list with ints, and returns a list with the double ints.
+    Takes a list with integers, and returns a list with the double integers.
     """
     # Looks like maps takes a method/function, and then an iterator with values to be passed on to the method.
     square_numbers = map(square, numbers_as_list)

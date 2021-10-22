@@ -26,8 +26,9 @@ def subtract(num_tuple: tuple) -> float:
 if __name__ == "__main__":
     print(add_up((2,3), stuff="Meh"))  # Runs
     print(add_up((3,3)))  # Runs. But it seems that `stuff` is not present in args or kwargs in the wrapper.
-
     # print(add_up((4,3,5)))  # AssertionError, three elements instead of two
     # print(add_up(("two",3)))  # ValueError, string instead of int or float
 
     print(subtract((50, "15")))
+    # print(subtract((100, 200, 300)))  # AssertionError, three elements instead of two
+    # print(subtract(("500", "five")))  # ValueError, string instead of int or float
