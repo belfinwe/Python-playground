@@ -1,6 +1,8 @@
 # Python-playground
 
-Testing out new stuff with Python
+Testing out new stuff with Python.  
+
+Exported to [GitLab](https://gitlab.com/joakimRN/Python-playground) as of 2021-11-05.
 
 ## Files
 
