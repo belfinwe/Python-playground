@@ -19,7 +19,6 @@ def log_inputs(func):
     logging.info(f"{func.__name__=}")
     @wraps(func)
     def wrapper(*args, **kwargs):
-        logg.info(f"args: {args}")
-        logg.info(f"kwargs: {kwargs}")
+        logg.info(f"args: {args}, kwargs: {kwargs}")
         return func(*args, **kwargs)
     return wrapper

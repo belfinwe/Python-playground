@@ -41,11 +41,15 @@ def is_number_mk2(num: str) -> tuple:
 
 
 def fjas(num: str):
-    if isinstance(int(num), int) or isinstance(float(num), float):
-        if isinstance(int(num), int):
-            return int(num), "int", True
-        return float(num), "float", True
-    return None, "Not a number", False
+    try:
+        isinstance(float(num), float)
+        try:
+            isinstance(int(num), int)
+            return int(num), int, True
+        except ValueError:
+            return float(num), float, True
+    except ValueError:
+        return num, type(num), False
 
 if __name__ == "__main__":
     print("first")
